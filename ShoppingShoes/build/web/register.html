@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, td {
+                border: none;
+                border-collapse: collapse;
+
+            }
+            #btn{
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                color:black;
+                font-weight: 800;
+                padding: 10px 20px;
+                margin: 0 auto;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+            }
+            .fontTd {
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center"><font color="blue">Create new account</font></h1>
+
+        <form action="register" method="POST">
+            <table border="1" Cellpadding= "10">
+                <tbody>
+                    <tr>
+                        <td class="fontTd">Username :</td>
+                        <td>
+                            <input type="text" name="txtUsername" value="" size="50" /> (6 - 20 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Password :  </td>
+                        <td>
+                            <input type="password" name="txtPassword" value="" size="50"/> (6 - 30 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Confirm password : </td> 
+                        <td>
+                            <input type="password" name="txtConfirm" value="" size="50"/> (6 - 30 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Last Name : </td>
+                        <td>
+                            <input type="text" name="txtLastname" value="" size="50"/> (Max length is 15 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Middle name : </td>
+                        <td>
+                            <input type="text" name="txtMiddleName" value="" size="50"/> (Max length is 30 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">First name : </td>
+                        <td>
+                            <input type="text" name="txtFirstName" value="" size="50"/> (Max length is 15 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Address : </td>
+                        <td>
+                            <input type="text" name="txtAddress" value="" size="50"/> (Max length is 250 characters)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fontTd">Phone : </td>
+                        <td>
+                            <input type="text" name="txtPhone" value="" size="50"/> (9 - 11 characters)
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br/>
+
+            <input type="submit" value="Register" id="btn"/>
+        </form>
+        <a href="login.html">CLICK HERE TO LOGIN</a>
+    </body>
+</html>
